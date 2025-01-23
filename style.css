@@ -1,0 +1,511 @@
+:root {
+    --color1: #000000;  /* Black */
+    --color2: #ffffff;  /* White */
+    --color3: #222831;  /* Theme colour 1 */
+    --color4: #393E46;  /* Theme colour 2 */
+    --color5: #00ADB5;  /* Theme colour 3 */
+    --color6: #EEEEEE;  /* Theme colour 4 */
+  }
+
+  .text-bg-dark {
+    color: #fff !important;
+    background-color: var(--color1) !important;
+}
+
+  body {
+    font-family: "Outfit", serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(300deg, var(--color4), var(--color3), var(--color1));
+    background-size: 180% 180%;
+    animation: header 12s ease infinite;
+  }
+
+  @keyframes header {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+   header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color5);
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: normal;
+    color: var(--color2);
+  }
+
+  header p {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--color2);
+  }
+
+  .header-buttons button{
+    background: var(--color5);
+    width: 8rem;
+    height: 3rem;
+    color: var(--color2);
+    border: none;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .header-buttons button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color2);
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 3rem;
+  }
+
+  /*--------------------------------------------------------------
+# HOME PAGE PRESENTATION | HELLO
+--------------------------------------------------------------*/
+  .presentation,
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentation h3,
+  .skills h3 {
+    color: var(--color5);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+
+@media (min-width: 1251px) {
+    .presentation p {
+      width: 700px
+    }
+  }
+
+  @media (min-width: 981px) and (max-width: 1250px) {
+  .presentation p {
+    width: 700px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 980px) {
+  .presentation p {
+    width: 550px;
+  }
+}
+
+.presentation img {
+  margin-top: 3rem;
+}
+
+.dotted-line {
+  border-bottom: 3px dotted var(--color5);
+  margin: 3rem auto;
+  width: 65%;
+}
+
+/*--------------------------------------------------------------
+# HOME PAGE SKILLS
+--------------------------------------------------------------*/
+
+.single-skill {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  text-align: left;
+  margin: 1rem 2rem;
+}
+
+.single-skill p {
+margin-top: -1rem;
+}
+
+.single-skill img {
+  grid-row: span 2;
+  border-radius: 15px;
+}
+
+.single-skill h4 {
+  color: var(--color5);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (min-width: 100px) and (max-width: 950px) {
+  .single-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+
+  .single-skill p {
+   margin-top: -1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# GET IN TOUCH
+--------------------------------------------------------------*/
+.get-in-touch {
+  background-color: var(--color5);
+}
+
+.in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem 0;
+}
+
+.h3-light {
+  color: var(--color2);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
+.p-light {
+  color: var(--color2);
+  font-weight: 300;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 65%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 696px) {
+  .p-light {
+    width: 95%;
+  }
+}
+
+.bi {
+  padding-right: 0.3rem;
+}
+
+.btn-light {
+background: var(--color2);
+width: 9rem;
+height: 3rem;
+color: var(--color4);
+border: none;
+border-radius: 8px;
+margin-right: 20px;
+margin-bottom: 4rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+background-color: var(--color6);
+}
+
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+footer {
+  background-color: var(--color4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 200;
+  margin: 0;
+  padding: 4rem 0;
+  color: var(--color2);
+}
+
+.socials {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a {
+  color: var(--color2);
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: var(--color5);
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 2rem;
+}
+
+
+/*--------------------------------------------------------------
+# NAVIGATION MENU
+--------------------------------------------------------------*/
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem 4rem;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: 200;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link.selected {
+  background-color: var(--color5);
+}
+
+.nav-link:hover {
+  color: var(--color5);
+}
+
+
+@media (max-width: 430px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+ul.nav-links {
+  padding-left: 0px;
+}
+
+  .nav-link {
+    display: flex;
+    justify-content: center; /* Align text to the right for consistency */
+
+  }
+
+a.nav-link {
+  margin-left: 0;
+  padding: 0rem 0.5rem;
+}
+}
+
+
+
+/*--------------------------------------------------------------
+# RESUME
+--------------------------------------------------------------*/
+
+.resume-title {
+  color: var(--color3);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-item {
+  padding: 0 30px 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--color5);
+  position: relative;
+}
+
+
+.resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color5), transparent 20%);
+  margin-bottom: 10px;
+}
+
+.resume-item h5 {
+  font-size: 15px;
+  padding: 5px 0px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+}
+
+.resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left:-10px; 
+  top: 0;  
+  background: var(--color2);
+  border: 3px solid var(--color5);
+}
+
+
+
+/*--------------------------------------------------------------
+# CONTACT PAGE
+--------------------------------------------------------------*/
+
+.bi-globe,
+.bi-envelope-open-fill,
+.bi-telephone-fill,
+.bi-geo-alt-fill
+ {
+  font-size: 2rem;
+  color: var(--color5)
+}
+
+.text a {
+  text-decoration: none;
+  color: var(--color5)
+}
+
+.contact-us-title {
+  color: var(--color5);
+  font-weight: 600;
+}
+
+.label {
+  padding: 1rem 0rem;
+}
+
+.gmap_iframe {
+  height: 500px !important;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 700px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 550px;
+}
+
+
+
+/*--------------------------------------------------------------
+# WORK PAGE | GALLERY
+--------------------------------------------------------------*/
+.gallery-title {
+  color: var(--color5);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.my-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: fit-content;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.my-gallery .gallery-item {
+  background-color: var(--color6);
+  color: white; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 15rem;
+  height: 15rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .my-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: fit-content;
+    place-items: center;
+  }
+
+  .gallery-container {
+    margin: 0 auto;
+    max-width: 100%;
+    place-items: center;
+  }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 599px) {
+  .my-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: fit-content;
+    place-items: center;
+  }
+}
