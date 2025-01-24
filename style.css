@@ -87,7 +87,6 @@
   /*--------------------------------------------------------------
 # HOME PAGE PRESENTATION | HELLO
 --------------------------------------------------------------*/
-  .presentation,
   .skills {
     display: flex;
     align-items: center;
@@ -96,7 +95,6 @@
     text-align: center;
   }
 
-  .presentation h3,
   .skills h3 {
     color: var(--color5);
     font-size: 2.5rem;
@@ -104,40 +102,11 @@
     padding: 1rem;
   }
 
-@media (min-width: 1251px) {
-    .presentation p {
-      width: 700px
-    }
-  }
-
-  @media (min-width: 981px) and (max-width: 1250px) {
-  .presentation p {
-    width: 700px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 980px) {
-  .presentation p {
-    width: 550px;
-  }
-}
-
-.presentation img {
-  margin-top: 3rem;
-}
-
-.dotted-line {
-  border-bottom: 3px dotted var(--color5);
-  margin: 3rem auto;
-  width: 65%;
-}
-
 .jumbocontainer {
   display: flex;
   flex-direction: row-reverse;
-justify-content: center;
-align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .jumbocontainer h3,
@@ -163,12 +132,11 @@ font-weight: 700;
     display: block;
   }
 
-  .jumbocontainer h3,
+.jumbocontainer h3,
 .jumbocontainer p {
 text-align: center;
 }
 }
-
 
 /*--------------------------------------------------------------
 # HOME PAGE SKILLS
