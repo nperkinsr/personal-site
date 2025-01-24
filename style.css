@@ -104,7 +104,7 @@
 
 .jumbocontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -135,6 +135,12 @@ font-weight: 700;
 .jumbocontainer h3,
 .jumbocontainer p {
 text-align: center;
+}
+
+.my-photo {
+display: flex;
+justify-content: center;
+margin: 0 auto;
 }
 }
 
