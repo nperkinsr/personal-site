@@ -59,10 +59,10 @@
     color: var(--color2);
   }
 
-  .header-buttons button{
+  .header-buttons a{
     background: var(--color5);
-    width: 8rem;
-    height: 3rem;
+    padding: 15px 30px;
+    text-decoration: none;
     color: var(--color2);
     border: none;
     border-radius: 8px;
@@ -72,7 +72,7 @@
     transition: background-color 0.3s ease;
   }
 
-  .header-buttons button:hover {
+  .header-buttons a:hover {
     background-color: transparent;
     border: 1px solid var(--color2);
   }
@@ -220,8 +220,8 @@ margin-top: -1rem;
 
 .btn-light {
 background: var(--color2);
-width: 9rem;
-height: 3rem;
+padding: 15px 25px;
+text-decoration: none;
 color: var(--color4);
 border: none;
 border-radius: 8px;
@@ -263,8 +263,11 @@ footer {
 }
 
 .socials a {
+  display: flex;
+  flex-direction: column;
   color: var(--color2);
   text-decoration: none;
+  text-align: center;
 }
 
 .socials a:hover {
